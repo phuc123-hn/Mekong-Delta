@@ -1,0 +1,111 @@
+/* Leaflet CSS */
+@import 'leaflet/dist/leaflet.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: #020617;
+  color: #e2e8f0;
+  overflow-x: hidden;
+}
+
+/* ===== THANH CUỘN: luôn hiện rõ, dùng được cho mọi vùng cuộn trong web ===== */
+* {
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: #475569 #0f172a;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #475569;
+  border-radius: 999px;
+  border: 3px solid #0f172a;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
+}
+
+::-webkit-scrollbar-corner {
+  background: #0f172a;
+}
+
+@layer components {
+  .card {
+    @apply rounded-xl border border-slate-800 bg-slate-900;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg px-4 py-2 text-sm font-semibold transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-400 disabled:cursor-not-allowed disabled:opacity-50;
+  }
+  .btn-primary {
+    @apply bg-cyan-600 text-white hover:bg-cyan-500;
+  }
+  .btn-secondary {
+    @apply border border-slate-700 bg-slate-800 text-slate-100 hover:bg-slate-700;
+  }
+  .btn-danger {
+    @apply bg-red-600 text-white hover:bg-red-500;
+  }
+  .btn-ghost {
+    @apply text-slate-300 hover:bg-slate-800 hover:text-white;
+  }
+
+  .input {
+    @apply w-full rounded-lg border border-slate-700 bg-slate-950 px-3 py-2 text-sm text-slate-100 placeholder-slate-500 focus:border-cyan-500 focus:outline-none focus:ring-1 focus:ring-cyan-500 disabled:opacity-60;
+  }
+  .input-error {
+    @apply border-red-500 focus:border-red-500 focus:ring-red-500;
+  }
+  .label {
+    @apply mb-1.5 block text-sm font-medium text-slate-300;
+  }
+  .field-error {
+    @apply mt-1 text-xs text-red-400;
+  }
+
+  .page {
+    @apply mx-auto w-full max-w-6xl px-4 py-6 md:px-8 md:py-8;
+  }
+  .page-title {
+    @apply text-2xl font-bold text-white md:text-3xl;
+  }
+  .page-sub {
+    @apply mt-1 text-sm text-slate-400;
+  }
+
+  .badge {
+    @apply inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold;
+  }
+}
+
+/* Popup của Leaflet đồng bộ với giao diện tối */
+.leaflet-popup-content-wrapper,
+.leaflet-popup-tip {
+  background: #0f172a;
+  color: #e2e8f0;
+  border: 1px solid #334155;
+}
+.leaflet-container {
+  font-family: inherit;
+  background: #0b1220;
+}

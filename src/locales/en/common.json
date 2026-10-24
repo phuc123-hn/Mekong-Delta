@@ -1,0 +1,20 @@
+{
+  "app_name": "🌊 Mekong Delta",
+  "app_subtitle": "Environmental Pressure Monitoring System",
+  "language": "Language",
+  "vietnamese": "Tiếng Việt",
+  "english": "English",
+  "loading": "Loading...",
+  "error": "Error",
+  "success": "Success",
+  "cancel": "Cancel",
+  "confirm": "Confirm",
+  "save": "Save",
+  "delete": "Delete",
+  "edit": "Edit",
+  "close": "Close",
+  "back": "Back",
+  "logout": "Logout",
+  "dark_mode": "🌙 Dark Mode",
+  "light_mode": "☀️ Light Mode"
+}

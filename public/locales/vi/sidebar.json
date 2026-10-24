@@ -1,0 +1,20 @@
+{
+  "dashboard": "Tổng quan",
+  "map": "Bản đồ Rủi ro",
+  "observations": "Khoa Học Công Dân",
+  "knowledge": "Kiến thức Nông nghiệp",
+  "inbox": "Hộp thư & Cảnh báo",
+  "input_data": "Nhập Liệu & Chỉ số",
+  "manage_messages": "Quản lý Tin nhắn",
+  "map_desc": "Xem chỉ số môi trường",
+  "observations_desc": "Báo cáo hiện trường",
+  "knowledge_desc": "Hướng dẫn kỹ thuật canh tác",
+  "inbox_desc": "Tin nhắn & thông báo",
+  "input_data_desc": "Cập nhật chỉ số Salinity, Flood...",
+  "manage_messages_desc": "Gửi cảnh báo đến nông dân",
+  "logout": "Đăng xuất",
+  "confirm_logout": "Bạn chắc chắn muốn đăng xuất?",
+  "role_farmer": "👨‍🌾 Nông dân",
+  "role_gov": "🏛️ Chính quyền",
+  "greetings": "Xin chào,"
+}

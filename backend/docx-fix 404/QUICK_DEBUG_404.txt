@@ -1,0 +1,109 @@
+🔥 QUICK FIX: 404 ERROR (Backend POST /api/auth/login not found)
+
+═══════════════════════════════════════════════════════════════
+
+⚡ STEP 1: CHECK SERVER (5 giây)
+─────────────────────────────
+cd backend
+npm run dev
+
+👀 Kỳ vọng thấy:
+  ✅ Server middleware initialized
+  📋 Registered routes:
+     PATCH,GET,PUT,DELETE,POST → /api/auth/register
+     PATCH,GET,PUT,DELETE,POST → /api/auth/login
+
+❌ Không thấy? → npm install && npm run build
+
+
+⚡ STEP 2: CHECK FRONTEND URL (1 giây)
+──────────────────────────────
+.env.local:
+  NEXT_PUBLIC_BACKEND_URL=http://localhost:5000
+  
+src/lib/api.ts:
+  const API_URL = process.env.NEXT_PUBLIC_BACKEND_URL;
+  
+❌ NEXT_PUBLIC_BACKEND_URL = undefined? → Tạo .env.local
+
+
+⚡ STEP 3: TEST DIRECT (Postman hoặc cURL)
+──────────────────────────
+curl -X POST http://localhost:5000/api/auth/login \
+  -H "Content-Type: application/json" \
+  -d '{"phone":"0123456789","password":"password123"}'
+
+✅ 200 hoặc 400 = Route OK (backend đúng)
+❌ 404 = Backend route sai (check step 1)
+
+
+⚡ STEP 4: CHECK NETWORK TAB (Browser DevTools)
+───────────────────────────────
+F12 → Network Tab → Làm action (login) → Xem request:
+  - URL: http://localhost:5000/api/auth/login ✅
+  - Method: POST ✅
+  - Status: 404 ❌ hay 200/400 ✅
+  - Body: {"phone":"...","password":"..."} ✅
+
+
+⚡ STEP 5: READ LOGS (nếu vẫn 404)
+────────────────────
+From backend start console:
+  👉 [POST] /api/auth/login
+  ✓ [POST] /api/auth/login → 200
+  
+OR file logs/error-*.log
+
+
+═══════════════════════════════════════════════════════════════
+
+🛠 COMMON FIXES:
+
+1. "404 Not Found: POST /login" (sai URL)
+   Fix: router.post('/login') nhưng frontend gọi '/api/auth/login'
+   → Frontend: /auth/login (vì app.use('/api/auth', authRoutes) prefix)
+   
+2. "404 Not Found: POST /api/auth/register" (route chưa import)
+   Fix: authRoutes không export router
+   → backend/src/routes/auth.ts: export default router;
+   
+3. "req.body undefined" (middleware sai order)
+   Fix: express.json() ở SAU routes
+   → Đưa app.use(express.json()) LÊN TRƯỚC routes
+   
+4. "Unauthorized" hoặc "401"
+   Fix: Backend auth middleware + 401 handler
+   → frontend auth-store.ts check token localStorage
+   
+5. CORS blocked (access blocked by CORS)
+   Fix: CORS không allow origin
+   → backend: cors({origin: 'http://localhost:3000'})
+   
+6. "npm ERR! Cannot find module" (Node downgrade)
+   Fix: rm -rf backend/node_modules package-lock.json
+       npm install
+   
+
+═══════════════════════════════════════════════════════════════
+
+✅ VERIFY FIX WORKS:
+
+Terminal 1:
+  cd backend && npm run dev
+  
+Terminal 2 (test):
+  node backend/test-routes.mjs
+  
+Expected:
+  ✅ Health Check → 200 ✓
+  ✅ Register (Public) → 201 or 409 ✓
+  ✅ Login (Public) → 200 or 401 ✓
+  
+  🎉 ALL ROUTES working! Deploy safe! ✅
+
+
+═══════════════════════════════════════════════════════════════
+
+📚 FULL GUIDE: backend/DEBUGGING_404.md
+
+Still stuck? → Copy logs/error-*.log + paste GitHub issue 🚀

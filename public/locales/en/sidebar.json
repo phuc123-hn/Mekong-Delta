@@ -1,0 +1,20 @@
+{
+  "dashboard": "Dashboard",
+  "map": "Risk Map",
+  "observations": "Citizen Science",
+  "knowledge": "Agricultural Knowledge",
+  "inbox": "Inbox & Alerts",
+  "input_data": "Input Data & Metrics",
+  "manage_messages": "Manage Messages",
+  "map_desc": "View environmental metrics",
+  "observations_desc": "Report field observations",
+  "knowledge_desc": "Agricultural guidance",
+  "inbox_desc": "Messages & notifications",
+  "input_data_desc": "Update Salinity, Flood metrics...",
+  "manage_messages_desc": "Send alerts to farmers",
+  "logout": "Logout",
+  "confirm_logout": "Are you sure you want to logout?",
+  "role_farmer": "👨‍🌾 Farmer",
+  "role_gov": "🏛️ Government",
+  "greetings": "Hello,"
+}

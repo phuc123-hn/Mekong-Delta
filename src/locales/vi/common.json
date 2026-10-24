@@ -1,0 +1,20 @@
+{
+  "app_name": "🌊 Mekong Delta",
+  "app_subtitle": "Hệ thống Giám sát Áp lực Môi trường",
+  "language": "Ngôn ngữ",
+  "vietnamese": "Tiếng Việt",
+  "english": "English",
+  "loading": "Đang tải...",
+  "error": "Lỗi",
+  "success": "Thành công",
+  "cancel": "Hủy",
+  "confirm": "Xác nhận",
+  "save": "Lưu",
+  "delete": "Xóa",
+  "edit": "Chỉnh sửa",
+  "close": "Đóng",
+  "back": "Quay lại",
+  "logout": "Đăng xuất",
+  "dark_mode": "🌙 Chế độ tối",
+  "light_mode": "☀️ Chế độ sáng"
+}
