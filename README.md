@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🌾 Delta Stress Lens
+# Delta Stress Lens
 
 ### Giám sát rủi ro môi trường Đồng bằng sông Cửu Long
 
@@ -24,7 +24,7 @@
 
 ---
 
-## 🌐 Giới thiệu
+## Giới thiệu
 
 **Delta Stress Lens** là một nền tảng phân tích và trực quan hóa rủi ro môi trường dành cho khu vực Đồng bằng sông Cửu Long, nơi đang chịu tác động đồng thời của **xâm nhập mặn, nắng nóng, ngập lụt và ô nhiễm**.
 
@@ -32,9 +32,9 @@ Cơ quan quản lý nhập số liệu quan trắc theo từng tỉnh. Nông dâ
 
 ---
 
-## 🖼️ Giao diện
+## Giao diện
 
-### 👨‍🌾 Dành cho nông dân
+### Dành cho nông dân
 
 <table>
   <tr>
@@ -50,7 +50,7 @@ Cơ quan quản lý nhập số liệu quan trắc theo từng tỉnh. Nông dâ
   </tr>
 </table>
 
-### 🏛️ Dành cho cơ quan quản lý
+### Dành cho cơ quan quản lý
 
 <table>
   <tr>
@@ -68,44 +68,44 @@ Cơ quan quản lý nhập số liệu quan trắc theo từng tỉnh. Nông dâ
 
 ---
 
-## ✨ Tính năng chính
+## Tính năng chính
 
-### 👨‍🌾 Nông dân
+### Nông dân
 
-- 🗺️ **Bản đồ rủi ro** theo thời gian thực, lọc theo *Tổng hợp · Mặn · Nhiệt · Lũ · Ô nhiễm*
-- 📍 Bấm vào từng tỉnh để xem số liệu do cán bộ nhập, ghi chú và khuyến cáo
-- 🔔 Nhận thông báo riêng khi tỉnh ở mức rủi ro cao trở lên
-- 💬 Hỏi cơ quan quản lý và đọc thông báo chung của toàn vùng
-- 🤖 **Bác Tư Vấn (AI)**: hỏi giống lúa, lịch xuống giống, cách xử lý khi mặn lên
-- 📚 **Kiến thức nhà nông** và các bản tin có ảnh minh họa
+- **Bản đồ rủi ro** theo thời gian thực, lọc theo *Tổng hợp · Mặn · Nhiệt · Lũ · Ô nhiễm*
+- Bấm vào từng tỉnh để xem số liệu do cán bộ nhập, ghi chú và khuyến cáo
+- Nhận thông báo riêng khi tỉnh ở mức rủi ro cao trở lên
+- Hỏi cơ quan quản lý và đọc thông báo chung của toàn vùng
+- **Bác Tư Vấn (AI)**: hỏi giống lúa, lịch xuống giống, cách xử lý khi mặn lên
+- **Kiến thức nhà nông** và các bản tin có ảnh minh họa
 
-### 🏛️ Cơ quan quản lý
+### Cơ quan quản lý
 
-- 📝 **Nhập liệu theo tỉnh** (13 tỉnh, thành) với 4 chỉ số, kiểm tra khoảng giá trị hợp lệ
-- 📢 **Phát hành thông báo** có mẫu sẵn: xâm nhập mặn, nắng nóng, lũ triều cường, ô nhiễm nước
-- 💬 **Hộp thoại** hai chiều với nông dân, tìm theo tên hoặc số điện thoại
-- 🧠 **Phân tích AI** trên dữ liệu quan trắc hiện có
-- 👥 **Quản lý người dùng** và đổi vai trò
-- 🌱 Số liệu mẫu để demo: `npm run seed:regions`
+- **Nhập liệu theo tỉnh** (13 tỉnh, thành) với 4 chỉ số, kiểm tra khoảng giá trị hợp lệ
+- **Phát hành thông báo** có mẫu sẵn: xâm nhập mặn, nắng nóng, lũ triều cường, ô nhiễm nước
+- **Hộp thoại** hai chiều với nông dân, tìm theo tên hoặc số điện thoại
+- **Phân tích AI** trên dữ liệu quan trắc hiện có
+- **Quản lý người dùng** và đổi vai trò
+- Số liệu mẫu để demo: `npm run seed:regions`
 
 ---
 
-## 🚦 Ngưỡng cảnh báo
+## Ngưỡng cảnh báo
 
 | Chỉ số | An toàn | Theo dõi | Nguy hiểm | Rất nguy hiểm |
 |---|---|---|---|---|
-| 🧂 **Độ mặn (‰)** | dưới 1 | từ 1 | từ 4 (lúa có thể thiệt hại nặng) | từ 8 |
-| 🌡️ **Nhiệt độ (°C)** | dưới 35 | từ 35 (nắng nóng) | từ 37 (gay gắt) | từ 39 |
-| 🌊 **Mức ngập (cm)** | dưới 10 | từ 10 | từ 30 (hại hoa màu) | từ 60 |
-| 💧 **Chất lượng nước (WQI)** | 76 trở lên (tốt) | 51 đến 75 (trung bình) | 26 đến 50 (kém) | dưới 26 (ô nhiễm nặng) |
+| **Độ mặn (‰)** | dưới 1 | từ 1 | từ 4 (lúa có thể thiệt hại nặng) | từ 8 |
+| **Nhiệt độ (°C)** | dưới 35 | từ 35 (nắng nóng) | từ 37 (gay gắt) | từ 39 |
+| **Mức ngập (cm)** | dưới 10 | từ 10 | từ 30 (hại hoa màu) | từ 60 |
+| **Chất lượng nước (WQI)** | 76 trở lên (tốt) | 51 đến 75 (trung bình) | 26 đến 50 (kém) | dưới 26 (ô nhiễm nặng) |
 
-Mức rủi ro của mỗi tỉnh: 🟢 Thấp · 🟡 Trung bình · 🟠 Cao · 🔴 Rất cao · ⚪ Chưa có số liệu.
+Mức rủi ro của mỗi tỉnh: Thấp · Trung bình · Cao · Rất cao · Chưa có số liệu.
 
 > Ngưỡng nằm ở `src/lib/risk.ts` (frontend) và `backend/src/config/risk.ts` (backend). Hai file này phải giữ giống nhau.
 
 ---
 
-## 🔄 Luồng dữ liệu & kiến trúc
+## Luồng dữ liệu & kiến trúc
 
 ```text
   Cán bộ (Nhập liệu)
@@ -134,29 +134,29 @@ Mức rủi ro của mỗi tỉnh: 🟢 Thấp · 🟡 Trung bình · 🟠 Cao �
 
 | Lớp | Công nghệ |
 |---|---|
-| 🖥️ **Frontend** | Next.js 16 (Turbopack), React 18, TypeScript, Tailwind CSS, Framer Motion, Zustand, Recharts, react-i18next, next-themes |
-| 🗺️ **Bản đồ** | Leaflet, react-leaflet, nền bản đồ MapTiler (dữ liệu © OpenStreetMap) |
-| ⚙️ **Backend** | Node.js, TypeScript, REST API, JWT, Socket.io |
-| 🗄️ **Cơ sở dữ liệu** | MongoDB (Mongoose) |
-| ✉️ **Email** | Nodemailer (SMTP) để gửi mã OTP |
-| 🤖 **AI** | Mô hình ngôn ngữ lớn qua API, khóa đặt trong `.env.local` |
-| ☁️ **Triển khai** | Vercel (frontend), Railway (backend) |
+| **Frontend** | Next.js 16 (Turbopack), React 18, TypeScript, Tailwind CSS, Framer Motion, Zustand, Recharts, react-i18next, next-themes |
+| **Bản đồ** | Leaflet, react-leaflet, nền bản đồ MapTiler (dữ liệu © OpenStreetMap) |
+| **Backend** | Node.js, TypeScript, REST API, JWT, Socket.io |
+| **Cơ sở dữ liệu** | MongoDB (Mongoose) |
+| **Email** | Nodemailer (SMTP) để gửi mã OTP |
+| **AI** | Mô hình ngôn ngữ lớn qua API, khóa đặt trong `.env.local` |
+| **Triển khai** | Vercel (frontend), Railway (backend) |
 
 ---
 
-## 🔐 Bảo mật
+## Bảo mật
 
-- 🔑 Mật khẩu băm, đăng nhập bằng **JWT**
-- 📨 **OTP email** khi đăng ký: hiệu lực 45 giây, nhập tối đa 2 lần, khóa gửi và nhập 60 giây khi sai lần 2, chống bấm gửi dồn dập. Mọi giới hạn kiểm tra ở backend (`backend/src/config/security.ts`)
-- 📱 Số điện thoại đúng **10 số**, bắt đầu bằng 0, kiểm tra ở giao diện, API và model
-- 🔌 Socket.io yêu cầu đăng nhập, chia phòng theo người dùng nên tin nhắn riêng không lộ sang người khác
-- 🌐 CORS theo danh sách cho phép, khi dev cho phép `localhost` và mạng LAN
-- 🧾 Nhật ký che mật khẩu, OTP và token thành `***`
-- 🙈 Không đưa `.env`, `.env.local`, `node_modules`, `logs` lên Git
+- Mật khẩu băm, đăng nhập bằng **JWT**
+- **OTP email** khi đăng ký: hiệu lực 45 giây, nhập tối đa 2 lần, khóa gửi và nhập 60 giây khi sai lần 2, chống bấm gửi dồn dập. Mọi giới hạn kiểm tra ở backend (`backend/src/config/security.ts`)
+- Số điện thoại đúng **10 số**, bắt đầu bằng 0, kiểm tra ở giao diện, API và model
+- Socket.io yêu cầu đăng nhập, chia phòng theo người dùng nên tin nhắn riêng không lộ sang người khác
+- CORS theo danh sách cho phép, khi dev cho phép `localhost` và mạng LAN
+- Nhật ký che mật khẩu, OTP và token thành `***`
+- Không đưa `.env`, `.env.local`, `node_modules`, `logs` lên Git
 
 ---
 
-## 🚀 Chạy thử trên máy
+## Chạy thử trên máy
 
 **Yêu cầu:** Node.js 22 trở lên, một cơ sở dữ liệu MongoDB (MongoDB Atlas miễn phí là đủ).
 
@@ -203,7 +203,7 @@ npm run fetch:news-images   # (thư mục gốc) tải ảnh bản tin từ Wiki
 
 ---
 
-## 📁 Cấu trúc thư mục
+## Cấu trúc thư mục
 
 ```text
 Mekong-Delta/
@@ -227,7 +227,7 @@ Mekong-Delta/
 
 ---
 
-## 🗺️ Lộ trình
+## Lộ trình
 
 - [x] Bản đồ rủi ro realtime theo tỉnh
 - [x] Nhập liệu cho cơ quan quản lý, thông báo và hộp thoại
@@ -241,7 +241,7 @@ Mekong-Delta/
 
 ---
 
-## 🙏 Ghi nhận
+## Ghi nhận
 
 - Nền bản đồ: © [MapTiler](https://www.maptiler.com/copyright/) © [OpenStreetMap contributors](https://www.openstreetmap.org/copyright)
 - Ảnh bản tin: tải từ Wikimedia Commons, tác giả được ghi ở cuối từng bài
@@ -249,6 +249,6 @@ Mekong-Delta/
 
 <div align="center">
 
-⭐ Nếu thấy dự án hữu ích, hãy để lại một ngôi sao nhé!
+Nếu thấy dự án hữu ích, hãy để lại một ngôi sao nhé!
 
 </div>
