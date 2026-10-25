@@ -130,7 +130,7 @@ Mức rủi ro của mỗi tỉnh: Thấp · Trung bình · Cao · Rất cao · 
 
 ---
 
-## 🛠️ Công nghệ
+## Công nghệ
 
 | Lớp | Công nghệ |
 |---|---|
